@@ -1,3 +1,18 @@
+<!--
+ * @Description: 项目入口
+ * @Author: Huaying Yan
+ * @Date: 2022-07-14 10:32:22
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-07-14 14:02:12
+-->
+<!-- 头部html描述文件 -->
+<!--
+ * @Description: 
+ * @Author: Huaying Yan
+ * @Date: 2022-07-14 10:32:23
+ * @LastEditors: 
+ * @LastEditTime: 2022-07-14 15:42:25
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,42 +43,101 @@
   
 <link rel="stylesheet" href="/css/style.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <meta name="generator" content="Hexo 5.4.2"></head>
 
 <body>
   <div id="container">
     <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
+      <!--网页头部 -->
+      <!--
+ * @Description: 
+ * @Author: Huaying Yan
+ * @Date: 2022-07-14 10:32:23
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-07-14 16:14:59
+-->
+<header id="header">
+  <!-- 背景图 -->
+  <div id="banner">
+    <div id="background"></div>
+  </div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
+      <!-- <h1 id="logo-wrap">
         <a href="/" id="logo">严华英的网络世界</a>
       </h1>
-      
+       -->
+      <div id="typed-strings">
+        <p>Hello,</p>
+        <p>我是严华英,</p>
+        <p>欢迎来到我的网络世界</p>
+      </div>
+      <span id="typed"></span>
     </div>
+    <!-- 顶部状态栏 -->
     <div id="header-inner" class="inner">
       <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+        <!-- <a id="main-nav-toggle" class="nav-icon"></a> -->
+        <!-- 
+          <a class="main-nav-link hvr-float" href="/">Home</a>
         
-          <a class="main-nav-link" href="/">Home</a>
+          <a class="main-nav-link hvr-float" href="/archives">Archives</a>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+          <a class="main-nav-link hvr-float" href="/archives">关于</a>
         
+          <a class="main-nav-link hvr-float" href="/archives">博客</a>
+        
+          <a class="main-nav-link hvr-float" href="/archives">联系</a>
+         -->
+        <a class="main-nav-link hvr-float home flex-box-center-center" href="/">
+          <div class="icon"></div>
+        </a>
+        <a class="main-nav-link hvr-float about flex-box-center-center" href="/">
+          <div class="icon"></div>
+        </a>
+        <a class="main-nav-link hvr-float blog flex-box-center-center" href="/">
+          <div class="icon"></div>
+        </a>
+        <a class="main-nav-link hvr-float code flex-box-center-center" href="/">
+          <div class="icon"></div>
+        </a>
+        <a class="main-nav-link hvr-float finder flex-box-center-center" href="/">
+          <div class="icon"></div>
+        </a>
+        <!-- <a class="main-nav-link hvr-float" href="/archives">11</a> -->
       </nav>
-      <nav id="sub-nav">
+      <!-- <nav id="sub-nav">
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
         <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
+      </nav> -->
+      <!-- <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://huayingYan.github.io"></form>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>
-      <div class="outer">
+<script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 100,
+    startDelay: 2000,
+    backSpeed: 100,
+    backDelay: 700,
+    smartBackspace: true,
+    fadeOut: false,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 500,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: '|',
+    autoInsertCss: true,
+  });
+</script>
+      <!-- <div class="outer">
         <section id="main">
   
   
@@ -138,8 +212,8 @@
   
 </aside>
         
-      </div>
-      <footer id="footer">
+      </div> -->
+      <!-- <footer id="footer">
   
   <div class="outer">
     <div id="footer-info" class="inner">
@@ -147,13 +221,19 @@
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
-</footer>
+</footer> -->
     </div>
-    <nav id="mobile-nav">
+    <!-- <nav id="mobile-nav">
   
     <a href="/" class="mobile-nav-link">Home</a>
   
     <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/archives" class="mobile-nav-link">关于</a>
+  
+    <a href="/archives" class="mobile-nav-link">博客</a>
+  
+    <a href="/archives" class="mobile-nav-link">联系</a>
   
 </nav>
     
@@ -174,7 +254,7 @@
 
 
 
-
+ -->
   </div>
 </body>
 </html>
